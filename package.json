@@ -1,0 +1,22 @@
+{
+  "name": "money-tracker",
+  "version": "1.0.0",
+  "description": "Money tracker app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Munkhzaya02111/Money-tracker.git"
+  },
+  "author": "Zaya&Suvda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Munkhzaya02111/Money-tracker/issues"
+  },
+  "homepage": "https://github.com/Munkhzaya02111/Money-tracker#readme",
+  "devDependencies": {
+    "electron": "^21.3.0"
+  }
+}
