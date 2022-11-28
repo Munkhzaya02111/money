@@ -8,27 +8,9 @@
     margin-bottom: 40px;
     overflow: hidden;
 }  
-/* .header_left{
-    float: left;
-    padding-top: 50px; 
-    padding-left: 40px; 
-    
-} */
 .header_right{
     float: right;
     padding-top: 50px; 
     padding-left: 40px; 
 
 }
-
-/* .header_left a{
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    color: black;
-    text-decoration: none;
-  }
-.header_li a:hover{
-    background-color: rgba(1, 135, 244, 1);
-    color: white;
-  } */
