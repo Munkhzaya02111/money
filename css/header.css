@@ -3,16 +3,17 @@
     margin: 0 auto;
 }
 .header_ul{
+    margin-left: 50em;
     list-style-type: none;
     margin-bottom: 40px;
     overflow: hidden;
 }  
-.header_left{
+/* .header_left{
     float: left;
     padding-top: 50px; 
     padding-left: 40px; 
     
-}
+} */
 .header_right{
     float: right;
     padding-top: 50px; 
