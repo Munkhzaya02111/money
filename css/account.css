@@ -8,9 +8,16 @@ h2 {
 }
 .pigpic {
   float: right;
-  ali
+}
+.categorypic {
+}
+.categorynames {
+  float: right;
 }
 /* .accounts li {
   float: left;
   padding: 100px;
 } */
+#myChart {
+  background-color: #0b8ce9;
+}
