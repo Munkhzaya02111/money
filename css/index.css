@@ -8,18 +8,14 @@
   font-weight: bold;
   font-size: 16px;
 }
-.buttonIndex{
+.buttonIndex {
   margin-left: 90px;
   display: block;
-  background-color: #0B8CE9;
+  background-color: #0b8ce9;
   color: aliceblue;
   height: 45px;
   width: 120px;
   border: none;
-  border-radius: 10px;  
+  border-radius: 10px;
   font-size: large;
-
 }
-/* .orlogo{
-
-} */
