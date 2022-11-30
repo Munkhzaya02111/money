@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Munkhzaya02111/MoneyTracker/issues"
   },
-  "homepage": "https://github.com/Munkhzaya02111/MoneyTracker#readme"
+  "homepage": "https://github.com/Munkhzaya02111/MoneyTracker#readme",
+  "devDependencies": {
+    "chart.js": "^4.0.1"
+  }
 }
