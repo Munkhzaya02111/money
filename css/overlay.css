@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 20px;
+  background-color: white;
+  z-index: 10;
+  width: 914px;
+  max-width: 80%;
+  height: 500px;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+.addIconImg {
+  padding: 88px;
+  float: left;
+}
+.title {
+  padding: 85px 78px;
+}
+.close-button {
+  float: right;
+  margin-right: 30px;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.dropdown {
+  margin-top: -40px;
+}
+input[type="text"],
+select {
+  /* width: 100%; */
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}

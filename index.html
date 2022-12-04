@@ -7,18 +7,15 @@
     <link rel="stylesheet" href="/css/sidebar.css">
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/overlay.css">
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="/css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
-    <script src="chart.js"></script>
+    <script defer src="overlay.js"></script>
 </head>
 
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script type="text/javascript" src="chart.js"></script>
-
     <div class="wrapper">
         <div class="section">
             <div class="top_navbar">
@@ -33,11 +30,47 @@
             </div>
             <div class="container">
                 <p class="orlogo">Орлого</p>
-                <canvas id="oilChart" width="600" height="400"></canvas>
+                <!-- <canvas id="oilChart" width="600" height="400"></canvas> -->
                 <img src="/images/graphic.png" style="margin: 40px;" alt="nuur orlogo zarlaga">
-                <button class="buttonIndex"> + Нэмэх </button>
+                <button class="buttonIndex" data-modal-target="#modal"> + Нэмэх </button>
+                <div class="modal" id="modal">
+                    <div class="modal-header">
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/images/addIncome.png" alt="addIncomePic" class="addIconImg">
+                        <h2 class="title">Орлого</h2>
+                        <div class="dropdown">
+                            <label for="membership">Ангилалууд</label>
+                            <select name="membership" id="membership">
+                                <option value="free">Хадгаламж</option>
+                                <option value="bronze">Цалин</option>
+                                <option value="silver" selected>Нэмэлт</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="fname">Мөнгөн дүн</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Мөнгөн дүн">
+                        </div>
+                        <button class="buttonIndex"> + Нэмэх</button>
+                    </div>
+                </div>
+                <div id="overlay"></div>
             </div>
         </div>
+
+        <div id="overlay"></div>
+        <!-- <button data-modal-target="#modal">Open Modal</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">Example Modal</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+          </div>
+        </div>
+        <div id="overlay"></div> -->
         <div class="sidebar">
             <ul>
                 <li class="item" style="padding-left:3em; padding-bottom: 1.5em;"> <img src="/images/Money tracker.png"
