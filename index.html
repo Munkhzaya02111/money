@@ -28,10 +28,10 @@
                     </ul>
                 </header>
             </div>
-            <div class="container">
-                <p class="orlogo">Орлого</p>
+            <div class="container1">
+                <!-- <p class="orlogo">Орлого</p> -->
                 <!-- <canvas id="oilChart" width="600" height="400"></canvas> -->
-                <img src="/images/graphic.png" style="margin: 40px;" alt="nuur orlogo zarlaga">
+                <!-- <img src="/images/graphic.png" style="margin: 40px;" alt="nuur orlogo zarlaga">
                 <button class="buttonIndex" data-modal-target="#modal"> + Нэмэх </button>
                 <div class="modal" id="modal">
                     <div class="modal-header">
@@ -43,9 +43,9 @@
                         <div class="dropdown">
                             <label for="membership">Ангилалууд</label>
                             <select name="membership" id="membership">
-                                <option value="free">Хадгаламж</option>
-                                <option value="bronze">Цалин</option>
-                                <option value="silver" selected>Нэмэлт</option>
+                                <option value="saving">Хадгаламж</option>
+                                <option value="salary">Цалин</option>
+                                <option value="additional" selected>Нэмэлт</option>
                             </select>
                         </div>
                         <div>
@@ -55,22 +55,44 @@
                         <button class="buttonIndex"> + Нэмэх</button>
                     </div>
                 </div>
-                <div id="overlay"></div>
+                <div id="overlay"></div> -->
+                <h4>Баланс</h4>
+                <h1 id="balance">0.00₮</h1>
+
+                <div class="inc-exp-container">
+                    <div>
+                        <h4>Орлого</h4>
+                        <p id="money-plus" class="money plus">+0.00₮</p>
+                    </div>
+                    <div>
+                        <h4>Зарлага</h4>
+                        <p id="money-minus" class="money minus">-0.00₮</p>
+                    </div>
+                </div>
+
+                <h3>Түүх</h3>
+                <ul id="list" class="list">
+
+                </ul>
+
+                <h3>Шинэ гүйлгээ нэмэх</h3>
+                <form id="form">
+                    <div class="form-control">
+                        <label for="text">Тайлбар</label>
+                        <input type="text" id="text" placeholder="Тайлбараа оруулна уу..." />
+                    </div>
+                    <div class="form-control">
+                        <label for="amount">Мөнгөн дүн<br />
+                            (Зарлага бол (-)сөрөг утга, орлого бол эерэг утга)</label>
+                        <input type="number" id="amount" placeholder="Мөнгөн дүнгээ орууна уу..." />
+                    </div>
+                    <button class="btn">+ Нэмэх</button>
+                </form>
             </div>
         </div>
-
+        <script src="script.js"></script>
         <div id="overlay"></div>
-        <!-- <button data-modal-target="#modal">Open Modal</button>
-        <div class="modal" id="modal">
-          <div class="modal-header">
-            <div class="title">Example Modal</div>
-            <button data-close-button class="close-button">&times;</button>
-          </div>
-          <div class="modal-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
-          </div>
-        </div>
-        <div id="overlay"></div> -->
+
         <div class="sidebar">
             <ul>
                 <li class="item" style="padding-left:3em; padding-bottom: 1.5em;"> <img src="/images/Money tracker.png"
@@ -103,8 +125,6 @@
             </ul>
         </div>
     </div>
-
-
 </body>
 
 </html>
